@@ -6,6 +6,8 @@
 //  Copyright © 2016 torilin. All rights reserved.
 //
 
+//  Color Changer update with improved UI
+
 import UIKit
 
 class ViewController: UIViewController {
