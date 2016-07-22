@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ColorChanger" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lbg-zJ-ayH">
+                                <rect key="frame" x="65" y="50" width="245" height="41"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Color Changer">
+                                        <attributes>
+                                            <color key="NSColor" red="0.14641877773718678" green="0.86794420811518325" blue="0.36868795109488478" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="30" name="Avenir-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KHW-0Y-lHi">
+                                <rect key="frame" x="120" y="145" width="135" height="41"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="GreyScale">
+                                        <attributes>
+                                            <color key="NSColor" red="0.13344649869109948" green="0.13344649869109948" blue="0.13344649869109948" alpha="0.77787012411347523" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="30" name="Avenir-Book"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dB9-7l-VNS">
+                                <rect key="frame" x="109" y="327" width="156" height="41"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="RGB Colors">
+                                        <attributes>
+                                            <color key="NSColor" red="0.27376472513089001" green="0.27376472513089001" blue="0.27376472513089001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="30" name="Avenir-Book"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="dIb-5r-vpX">
+                                <rect key="frame" x="38" y="409" width="295" height="31"/>
+                                <color key="minimumTrackTintColor" red="1" green="0.20000000000000001" blue="0.2627450980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="maximumTrackTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <color key="thumbTintColor" red="1" green="0.20000000000000001" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="RGBAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="oG1-I4-1Dg"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="0iI-cX-Wrx">
+                                <rect key="frame" x="38" y="486" width="295" height="31"/>
+                                <color key="minimumTrackTintColor" red="0.13725490196078433" green="0.94509803921568625" blue="0.48627450980392156" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="maximumTrackTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <color key="thumbTintColor" red="0.13725490196078433" green="0.94509803921568625" blue="0.48627450980392156" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="RGBAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="vUt-Fp-O0H"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="bkS-NI-0TS">
+                                <rect key="frame" x="40" y="569" width="295" height="31"/>
+                                <color key="minimumTrackTintColor" red="0.38455696222878089" green="0.5697246950512308" blue="0.87919257200000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="maximumTrackTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <color key="thumbTintColor" red="0.38455696220000002" green="0.56972469510000001" blue="0.87919257200000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="RGBAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="jRM-ON-Z46"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Iuf-Mr-0rd">
+                                <rect key="frame" x="40" y="237" width="295" height="31"/>
+                                <color key="minimumTrackTintColor" white="0.42999999999999999" alpha="0.59999999999999998" colorSpace="calibratedWhite"/>
+                                <color key="maximumTrackTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <color key="thumbTintColor" red="0.69411764705882351" green="0.69411764705882351" blue="0.69411764705882351" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="greyAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="vbA-n5-wzx"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0.50" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hQ2-Wc-gvq">
+                                <rect key="frame" x="161" y="380" width="50" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0.50" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4eq-TH-iIo">
+                                <rect key="frame" x="163" y="457" width="50" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0.50" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6og-2I-Iu0">
+                                <rect key="frame" x="163" y="540" width="50" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0.50" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Wm-oh-Pd6">
+                                <rect key="frame" x="161" y="208" width="50" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="de5-Xx-mx8">
+                                <rect key="frame" x="285" y="616" width="50" height="34"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="RESET">
+                                    <color key="titleColor" red="0.0" green="0.87919257198952883" blue="0.34063320976943828" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="reset" destination="BYZ-38-t0r" eventType="touchUpInside" id="6ag-mO-5Pg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="blueLabel" destination="6og-2I-Iu0" id="Wbm-xU-gb1"/>
+                        <outlet property="blueSlider" destination="bkS-NI-0TS" id="Na6-36-8ee"/>
+                        <outlet property="greenLabel" destination="4eq-TH-iIo" id="QP1-0Z-Fk7"/>
+                        <outlet property="greenSlider" destination="0iI-cX-Wrx" id="TRC-xh-iJL"/>
+                        <outlet property="greyLabel" destination="7Wm-oh-Pd6" id="tD6-Rv-Rg1"/>
+                        <outlet property="greyScaleSlider" destination="Iuf-Mr-0rd" id="aBH-K2-aBz"/>
+                        <outlet property="redLabel" destination="hQ2-Wc-gvq" id="ssr-1l-V07"/>
+                        <outlet property="redSlider" destination="dIb-5r-vpX" id="mq3-Ng-gUl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="417.5" y="348.5"/>
+        </scene>
+    </scenes>
+</document>
